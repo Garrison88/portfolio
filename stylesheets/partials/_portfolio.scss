@@ -1,0 +1,17 @@
+#section-portfolio {
+    grid-area: portfolio;
+}
+
+#portfolio-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    // grid-template-areas: "project"
+    //                      "project"
+    //                      "project";
+}
+
+.port-piece {
+    // grid-area: project;
+}
