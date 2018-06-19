@@ -1,17 +1,29 @@
 #section-portfolio {
-    grid-area: portfolio;
-}
-
-#portfolio-wrapper {
+    position: relative;
+    grid-area: p;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    // grid-template-areas: "project"
-    //                      "project"
-    //                      "project";
+    margin: 5px 0;
+    bottom: 50px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.port-piece {
-    // grid-area: project;
+.demo-card-square.mdl-card {
+    width: auto;
+    height: 320px;
+}
+
+.port-piece .mdl-card__title {
+    color: $off-white;
+}
+
+// .icon {
+//     height: inherit;
+// }
+
+@media (min-width: 769px) {
+    #section-portfolio {
+        bottom: 75px;
+    }
 }

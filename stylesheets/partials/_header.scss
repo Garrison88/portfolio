@@ -1,55 +1,39 @@
 #section-header {
-    background: #12c2e9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas: "."
+                         "content"
+                         ".";
+    // background: #12c2e9;  /* fallback for old browsers */
+    background-image: url('../res/img/crazy-colour.jpg');
+        // background-color: rgba(0,0,0,0.9);
     background-size: cover;
-    // position: relative;
+    background-position: center;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    grid-area: header;
+    grid-area: h;
     height: 100vh;
-}
-
-body {
-    margin-top: 58px;
-}
-
-.nav {
-    height: $nav-height;
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: 1fr repeat(4, auto) 1fr;
-    grid-template-areas: ". logo nav nav nav .";
-    list-style-type: none;
-    background-color: rgba(150, 150, 0, 0.6);
-    align-items: center;
-    margin: 0px;
-    // NAV BAR FIXED TO TOP
-    z-index: 10;
-    top: 0;
-    position: fixed;
-    width: 100%;
-}
-
-.nav-link {
-    text-align: center;
-}  
-
-.logo a {
-    font-family: 'Eater', cursive;
-    text-align: center;
-    color: white;
-    background-color: black;
-    grid-area: logo;
-}
-
-.nav-link a {
-    height: 100%;
-    text-align: center;
-    background-color: red;
-    grid-area: nav;
+    // opacity: 0.5;
 }
 
 .header-content-wrapper {
-    // display: grid;
+    // padding-bottom: 100px;
+    grid-area: content;
+}
+
+.header-content-wrapper h1 {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 10vw;
+    color: $off-white;
+    text-transform: uppercase;
+}
+.header-content-wrapper h2 {
+    font-size: 5vw;
+    font-family: 'Montserrat', sans-serif;
+    color: $off-white;
+    text-transform: uppercase;
+}
+
+@media (max-width: 769px) {
+    $nav-height: 58px;
 }

@@ -1,14 +1,18 @@
 @import './partials/variables';
+@import './partials/navigation';
 @import './partials/header';
 @import './partials/about';
 @import './partials/portfolio';
 @import './partials/contact';
 @import './partials/footer';
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 html {
     height: 100vh;
-    box-sizing: border-box;
-    background-color: darkgray;
+    background-color: $off-white;
     border-collapse: collapse;
     color: white;
     position: relative;
@@ -18,17 +22,26 @@ body {
     margin: 0px;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr auto auto auto auto;
-    grid-template-areas: "header  header     header"
-                         ".       about           ."
-                         ".       portfolio       ."
-                         "contact contact   contact"
-                         "footer  footer     footer";
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: 
+    "n n n n n n n n"
+    "h h h h h h h h"
+    ". a a a a a a ."
+    ". p p p p p p ."
+    // ". c c c c c c ."
+    "f f f f f f f f";
+}
+
+@media only screen and (min-width: 769px) {
+    .grid-container {
+        grid-template-areas: 
+        "n n n n n n n n"
+        "h h h h h h h h"
+        ". a a a a a a ."
+        ". . p p p p . ."
+        // ". . c c c c . ."
+        "f f f f f f f f";
+    }
 }

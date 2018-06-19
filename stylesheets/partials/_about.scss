@@ -1,5 +1,75 @@
 #section-about {
+    overflow: unset;
+    position: relative;
+    grid-area: a;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "avatar"
+                         "desc"
+                         "skills";
     text-align: center;
-    grid-area: about;
-    background-color: lightsalmon;
+    background-color: $off-white;
+    justify-items: center;
+    align-items: center;
+    bottom: 75px;
+    width: auto;
+}
+
+
+#about-avatar {
+    border-radius: 50%;
+    padding-top: 20px;
+    grid-area: avatar;
+    object-fit: cover;
+    max-width: 80%;
+    height: auto;
+}
+
+#about-description {
+    grid-area: desc;
+}
+
+#about-description > p {
+    color: $black;
+    font-size: x-large;
+}
+
+#skills-container {
+    padding-bottom: 10px;
+    grid-area: skills;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+#skills-container img {
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    max-height:75px;
+    max-width: 75px;
+    // height: auto;
+}
+
+@media (min-width: 769px) {
+    #section-about {
+        bottom: 150px;
+        // top: -150px;
+        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "avatar desc"
+                             "skills skills";
+    }
+    #about-avatar {
+        padding: 20px 0;
+    }
+
+    #about-description {
+        padding-right: 20px;
+    }
+    #skills-container img {
+        padding: 10px;
+        max-height:100px;
+        max-width: 100px;
+    }
 }
