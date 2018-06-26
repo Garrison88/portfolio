@@ -16,32 +16,36 @@ html {
     border-collapse: collapse;
     color: white;
     position: relative;
+    padding-top: $nav-height;
+    // font-family: 'Roboto Slab', serif;
 }
 
 body {
+    // padding-top: $nav-height;/
     margin: 0px;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-areas: 
-    "n n n n n n n n"
-    "h h h h h h h h"
-    ". a a a a a a ."
-    ". p p p p p p ."
-    // ". c c c c c c ."
-    "f f f f f f f f";
+    "n n n n n n n n n n n n"
+    "h h h h h h h h h h h h"
+    ". . a a a a a a a a . ."
+    ". . . p p p p p p . . ."
+    "f f f f f f f f f f f f";
 }
 
 @media only screen and (min-width: 769px) {
     .grid-container {
         grid-template-areas: 
-        "n n n n n n n n"
-        "h h h h h h h h"
-        ". a a a a a a ."
-        ". . p p p p . ."
-        // ". . c c c c . ."
-        "f f f f f f f f";
+        "n n n n n n n n n n n n"
+        "h h h h h h h h h h h h"
+        ". . . a a a a a a . . ."
+        ". . . p p p p p p . . ."
+        "f f f f f f f f f f f f";
+    }
+    html {
+        padding-top: $nav-height-large;
     }
 }

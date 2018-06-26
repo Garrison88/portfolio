@@ -3,7 +3,7 @@
     position: relative;
     grid-area: a;
     display: grid;
-    grid-gap: 10px;
+    // grid-gap: 10px;
     grid-template-columns: 1fr;
     grid-template-areas: "avatar"
                          "desc"
@@ -12,7 +12,7 @@
     background-color: $off-white;
     justify-items: center;
     align-items: center;
-    bottom: 75px;
+    bottom: 50px;
     width: auto;
 }
 
@@ -22,7 +22,7 @@
     padding-top: 20px;
     grid-area: avatar;
     object-fit: cover;
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
 }
 
@@ -53,7 +53,7 @@
 
 @media (min-width: 769px) {
     #section-about {
-        bottom: 150px;
+        bottom: 75px;
         // top: -150px;
         width: auto;
         grid-template-columns: repeat(2, 1fr);

@@ -2,7 +2,7 @@ const icons = ["res/img/skills-icons/html5.png", "res/img/skills-icons/css3.png"
 
 const portPieces = [     
     {
-      title: 'Rid Of It',
+      title: 'Rid Of It App',
       repoUrl: 'JunkApp-2.0',
       description: 'Android app created for junk removal company',
       thumbPath: 'roi.png'
@@ -36,7 +36,7 @@ const portPieces = [
   ];
 
 function htmlToElements(portPieces) {
-  const container = document.getElementById('section-portfolio');
+  const container = document.getElementById('portfolio-container');
   for (let portPiece of portPieces) {
     let portTemplate = 
         `<div class="port-piece demo-card-square mdl-card mdl-shadow--8dp">
@@ -47,7 +47,7 @@ function htmlToElements(portPieces) {
               ${portPiece.description}
           </div>
           <div class="mdl-card__actions mdl-card--border" style='display:list-item'>
-          ${portPiece.siteUrl ? "<a href='" + portPiece.siteUrl + "' class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect' target='_blank'>view site <i class='fas fa-external-link-square-alt'></i></a>" : ''}
+          ${portPiece.siteUrl ? "<a href='" + portPiece.siteUrl + "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>view site <i class='fas fa-external-link-square-alt'></i></a>" : ''}
             ${portPiece.repoUrl ? "<a href='https://github.com/Garrison88/" + portPiece.repoUrl + "' class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect' target='_blank'>view repo <i class='fas fa-external-link-square-alt'></i></a>" : ''}
           </div>
         </div>`;
@@ -57,14 +57,18 @@ function htmlToElements(portPieces) {
   }
 }
 
+window.onscroll = function() {
+  window.pageYOffset > 200 ? document.getElementById('nav-header').className = 'to-top-visible' : document.getElementById('nav-header').className = 'to-top-hidden';
+}
 
 function scrollToSection(sectionName) {
-  $(`#nav-${sectionName}`).on('click', function (e) {
+  $(`#nav-${sectionName}`).on('click', (e) => {
     e.preventDefault();
-    $("html, body")
+    $('html, body')
     .animate({scrollTop: $(`#section-${sectionName}`)
     .offset()
-    .top }, 500);
+    // account for size of navbar
+    .top-88 }, 500);
   });
 };
 
