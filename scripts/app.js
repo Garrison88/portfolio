@@ -46,7 +46,7 @@ function htmlToElements(portPieces) {
   for (let portPiece of portPieces) {
     let portTemplate = 
         `<div class="port-piece demo-card-square mdl-card mdl-shadow--8dp">
-          <div style="background: url('../res/img/portfolio/${portPiece.thumbPath}') center / cover no-repeat" class="mdl-card__title mdl-card--expand">
+          <div style="background: url('./res/img/portfolio/${portPiece.thumbPath}') center / cover no-repeat" class="mdl-card__title mdl-card--expand">
           </div>
           <div class="mdl-card__supporting-text">
           <h2 class="mdl-card__title-text">${portPiece.title}</h2>

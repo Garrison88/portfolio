@@ -1,6 +1,5 @@
 #section-navigation {
     grid-area: n;
-    // display: inline;
     // NAV BAR FIXED TO TOP
     z-index: 2;
     top: 0;
@@ -9,17 +8,11 @@
 }
 
 #nav {
-    // grid-area: nav;
-    // padding: 0;
     margin: 0px;
     height: $nav-height;
     box-shadow: rgba(0, 0, 0, 0.5) 0 3px 6px;
-    // display: flex;
-    // grid-template-columns: auto auto auto auto;
     list-style-type: none;
     background-color: $off-white;
-    // align-items: center;
-    // justify-content: center;
 }
 
 #nav ul {
@@ -38,8 +31,6 @@
 }
 
 #social-icons {
-    // margin-right: auto;
-    // margin-left: auto;
     left: auto;
     display: flex;
     list-style-type: none;
@@ -72,8 +63,6 @@
     min-width: 0;
 }
 
-@media (min-width: 769px) {
-    #nav {
-        height: $nav-height-large;
-    }
-}
+// @media (min-width: 769px) {
+    
+// }

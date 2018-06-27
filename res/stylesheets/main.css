@@ -62,12 +62,6 @@
   min-width: 0;
 }
 
-@media (min-width: 769px) {
-  #nav {
-    height: 78px;
-  }
-}
-
 #section-header {
   display: grid;
   grid-template-rows: auto auto 1fr;
@@ -261,9 +255,6 @@ body {
 @media only screen and (min-width: 769px) {
   .grid-container {
     grid-template-areas: "n n n n n n n n n n n n" "h h h h h h h h h h h h" ". . . a a a a a a . . ." ". . . p p p p p p . . ." "f f f f f f f f f f f f";
-  }
-  html {
-    padding-top: 78px;
   }
 }
 /*# sourceMappingURL=main.css.map */
