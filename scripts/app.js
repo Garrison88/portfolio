@@ -2,7 +2,7 @@ const icons = ["res/img/skills-icons/html5.png", "res/img/skills-icons/css3.png"
 
 const portPieces = [     
     {
-      title: 'Rid Of It App',
+      title: 'Native Android App',
       repoUrl: 'JunkApp-2.0',
       description: 'Android app created for junk removal company',
       thumbPath: 'roi.png'
@@ -34,6 +34,12 @@ const portPieces = [
       thumbPath: 'dawn-ayer.png'
     }
   ];
+
+  // var socialIcons = document.querySelector('.fab');
+
+  // window.onResize = function() {
+  //   window.innerWidth <= 769 ? socialIcon.classList.remove('fa-2x') : socialIcon.classList.add('fa-2x');
+  // };
 
 function htmlToElements(portPieces) {
   const container = document.getElementById('portfolio-container');

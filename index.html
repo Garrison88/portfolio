@@ -5,7 +5,7 @@
         <title>Garrison - Developer</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Yantramanav:900|Roboto|Roboto+Slab" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Yantramanav:900|Roboto:400,500|Roboto+Slab" rel="stylesheet"> 
         <link rel="stylesheet" href="stylesheets/main.css">
     </head>
     <body>
@@ -13,56 +13,42 @@
             <!-- NAVIGATION SECTION -->
             <div id="section-navigation">
                 <div id="nav">
-                    <!-- <div> -->
-                        <li class="nav-item to-top-hidden" id="nav-header"><a href="#header"><button id="return-to-top" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent mdl-button--raised"><i class="fas fa-arrow-up"></i></button></a></li>
-                    <!-- </div>
-                    <div> -->
-                        <li class="nav-item" id="nav-about"><a href="#about"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">About</button></a></li>
-
-                    <!-- </div>
-                    <div> -->
-
-                        <li class="nav-item" id="nav-portfolio"><a href="#portfolio"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Portfolio</button></a></li>
-                    <!-- </div> -->
-                    <!-- <div id="social-icons">
-                        <ul>
-                            <li><i class="fab fa-github-square"></i></li>
-                            <li><i class="fab fa-github-square"></i></li>
-                            <li><i class="fab fa-github-square"></i></li>
-                        </ul>
-                    </div> -->
+                    <ul>
+                        <div id="center-nav-items">
+                            <li class="nav-item to-top-hidden" id="nav-header"><a href="#header"><button id="return-to-top" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent mdl-button--raised"><i class="fas fa-arrow-up"></i></button></a></li>
+                            <li class="nav-item" id="nav-about"><a href="#about"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">About</button></a></li>
+                            <li class="nav-item" id="nav-portfolio"><a href="#portfolio"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Portfolio</button></a></li>
+                        </div>
+                        <div id="social-icons">
+                                <li><a href="https://github.com/Garrison88" target="_blank"><i class="fab fa-github-square fa-2x"></i></a></li>
+                                <li><a href="https://twitter.com/GarrisonSiberry" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                                <li><a href="https://linkedin.com/in/garrisonsiberry" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                        </div>
+                    </ul>
                 </div>
             </div>
             <!-- HEADER SECTION -->
             <div id="section-header">
-                <!-- <div class="header-content-wrapper"> -->
-                    <!-- <div> -->
-                        <!-- <div> -->
-                            <h1>garrison siberry</h1>
-                            <h4>full-stack web / android</h4>
-                        <!-- </div> -->
-                    <!-- </div> -->
-                    <a href="https://drive.google.com/file/d/1QrtdwvcU4rByckBjaP8XovsBnmgGoQgk/view?usp=sharing" target="_blank"><button id="cv-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">view cv .pdf <i class='fas fa-external-link-square-alt'></i></button></a>
-                    <!-- <div></div>
-                    <div></div> -->
-                    
-                <!-- </div> -->
+                <h1 class="display-4">garrison siberry</h1>
+                <h4>full-stack web / android</h4>
+                <a href="https://drive.google.com/file/d/1QrtdwvcU4rByckBjaP8XovsBnmgGoQgk/view?usp=sharing" target="_blank"><button id="cv-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">view cv .pdf <i class='fas fa-external-link-square-alt'></i></button></a>
             </div>
             <!-- ABOUT SECTION -->
             <div id="section-about" class="mdl-card mdl-shadow--8dp">
                 <img id="about-avatar" src='res/img/avatar.jpeg'>
                 <div class="mdl-card__supporting-text">
-                    I began coding four years ago and haven't looked back
-                    <!-- I strive to replicate the synergy of computer programming with real life interaction.
-                    Since I began programming 3 years ago, my worldview has changed. I see functions of life as functions of program,
-                     each element a variable assisting and passing information to better serve the overall application. 
-                     Ex Pokemon trainer. My passion revolves around the synergy of life, design, and interaction and I 
-                     love the way web development allows me to explore all these facets of life. -->
+                    <p id="about-description">
+                    I love solving problems and writing efficient code, and I believe deleting code can sometimes be as productive as writing it.<br>
+                    My obssession with programming began with a deep dive into Android. I used lessons and real world experience to develop a 
+                    logistics app for a Toronto based company. Since then I have been building websites and web-applications, exploring the 
+                    space between design and development. 
+                </p>
                 </div>
                 <div id="skills-container">
                     <!-- IMG GENERATED IN APP.JS -->
                 </div>
             </div>
+            <!-- <hr> -->
             <!-- PORTFOLIO SECTION -->
             <div id="section-portfolio">
                 <h4>portfolio</h4>
@@ -76,8 +62,9 @@
                     <div class="mdl-mini-footer__left-section">
                         <div class="mdl-logo">&#169; 2018 Garrison Siberry</div>
                         <ul class="mdl-mini-footer__link-list">
-                            <li><a href="#">Help</a><i class="fab fa-github-square"></i></li>
-                            <li><a href="#">Privacy & Terms</a></li>
+                            <li><a href="https://github.com/Garrison88" target="_blank"><i class="fab fa-github-square fa-2x"></i></a></li>
+                            <li><a href="https://twitter.com/GarrisonSiberry" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                            <li><a href="https://linkedin.com/in/garrisonsiberry" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
                         </ul>
                     </div>
                 </footer>

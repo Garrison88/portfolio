@@ -26,13 +26,13 @@
     height: auto;
 }
 
+// #about-description {
+// }
+
 #about-description {
     grid-area: desc;
-}
-
-#about-description > p {
-    color: $black;
-    font-size: x-large;
+    margin: 0;
+    // font-family: 'Roboto', sans-serif;
 }
 
 #skills-container {
@@ -48,13 +48,11 @@
     padding: 5px;
     max-height:75px;
     max-width: 75px;
-    // height: auto;
 }
 
 @media (min-width: 769px) {
     #section-about {
         bottom: 75px;
-        // top: -150px;
         width: auto;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "avatar desc"
@@ -65,7 +63,7 @@
     }
 
     #about-description {
-        padding-right: 20px;
+        // padding-right: 20px;
     }
     #skills-container img {
         padding: 10px;

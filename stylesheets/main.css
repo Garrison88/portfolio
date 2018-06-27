@@ -1,6 +1,5 @@
 #section-navigation {
   grid-area: n;
-  display: inline;
   z-index: 2;
   top: 0;
   position: fixed;
@@ -8,15 +7,41 @@
 }
 
 #nav {
+  margin: 0px;
   height: 58px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 3px 6px;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
   list-style-type: none;
   background-color: #f3f3f3;
+}
+
+#nav ul {
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0px;
+  margin: 0;
+  height: 100%;
+}
+
+#center-nav-items {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  list-style-type: none;
+}
+
+#social-icons {
+  left: auto;
+  display: flex;
+  list-style-type: none;
+}
+
+#social-icons li {
+  color: #2B2B2B;
+  padding: 10px;
+}
+
+.fab {
+  color: #2B2B2B;
 }
 
 .to-top-hidden {
@@ -39,7 +64,6 @@
 
 @media (min-width: 769px) {
   #nav {
-    grid-template-columns: auto auto auto;
     height: 78px;
   }
 }
@@ -48,7 +72,7 @@
   display: grid;
   grid-template-rows: auto auto 1fr;
   grid-template-areas: "name" "info" "cv";
-  background-image: url("../res/img/computer-edited.jpeg");
+  background-image: url("http://gdurl.com/Ink6");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -126,11 +150,7 @@
 
 #about-description {
   grid-area: desc;
-}
-
-#about-description > p {
-  color: #0E0B16;
-  font-size: x-large;
+  margin: 0;
 }
 
 #skills-container {
@@ -157,9 +177,6 @@
   }
   #about-avatar {
     padding: 20px 0;
-  }
-  #about-description {
-    padding-right: 20px;
   }
   #skills-container img {
     padding: 10px;
