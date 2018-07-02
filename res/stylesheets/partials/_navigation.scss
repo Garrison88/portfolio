@@ -23,6 +23,10 @@
     height: 100%;
 }
 
+.nav-link {
+    color: $black !important;
+}
+
 #center-nav-items {
     margin-right: auto;
     margin-left: auto;
@@ -31,9 +35,9 @@
 }
 
 #social-icons {
-    left: auto;
-    display: flex;
-    list-style-type: none;
+    // left: auto;
+    display: none;
+    // list-style-type: none;
 }
 
 #social-icons li {
@@ -41,7 +45,7 @@
     padding: 10px;
 }
 
-.fab {
+.social-icon {
     color: $black;
 }
 
@@ -63,6 +67,10 @@
     min-width: 0;
 }
 
-// @media (min-width: 769px) {
-    
-// }
+@media (min-width: 478px) {
+    #social-icons {
+        left: auto;
+        display: flex;
+        list-style-type: none;
+    }
+}

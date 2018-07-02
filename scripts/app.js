@@ -9,37 +9,40 @@ const portPieces = [
     },
     {
       title: 'TomKat Creative',
-      siteUrl: 'https://www.tomkatcreative.com/',
+      siteUrl: 'www.tomkatcreative.com/',
       repoUrl: 'tomkat-creative',
       description: 'Portfolio website for creative studio',
       thumbPath: 'tomkat.png'
     },
     {
       title: 'RGB Game',
-      siteUrl: 'https://rgb-guessing-game-garrison.herokuapp.com/game-page.html',
+      siteUrl: 'rgb-guessing-game-garrison.herokuapp.com/game-page.html',
       repoUrl: 'rgb-guessing-game',
       description: 'Guess that RBG value!',
       thumbPath: 'colour-game.png'
     },
     {
       title: 'Yelp Camp',
-      siteUrl: 'https://fast-cliffs-46179.herokuapp.com/',
+      siteUrl: 'fast-cliffs-46179.herokuapp.com/',
       description: 'Camp reviewing website',
       thumbPath: 'yelp-camp.png'
     },
     {
       title: 'DawnAyer.com',
-      siteUrl: 'http://dawnayer.com/',
+      siteUrl: 'dawnayer.com/',
       description: 'Website for writer / brand strategist',
       thumbPath: 'dawn-ayer.png'
     }
   ];
 
-  // var socialIcons = document.querySelector('.fab');
+//   var socialIcons = document.querySelectorAll('.social-icon');
 
-  // window.onResize = function() {
-  //   window.innerWidth <= 769 ? socialIcon.classList.remove('fa-2x') : socialIcon.classList.add('fa-2x');
-  // };
+//   // window.onResize = function() {
+//     for (socialIcon of socialIcons){
+//     console.log("test");
+//     window.innerWidth <= 600 ? socialIcons.classList.remove('fa-2x') : socialIcons.classList.add('fa-2x');
+//   // };
+// }
 
 function htmlToElements(portPieces) {
   const container = document.getElementById('portfolio-container');
@@ -53,7 +56,7 @@ function htmlToElements(portPieces) {
               ${portPiece.description}
           </div>
           <div class="mdl-card__actions mdl-card--border" style='display:list-item'>
-          ${portPiece.siteUrl ? "<a href='" + portPiece.siteUrl + "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>view site <i class='fas fa-external-link-square-alt'></i></a>" : ''}
+          ${portPiece.siteUrl ? "<a href='https://" + portPiece.siteUrl + "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>view site <i class='fas fa-external-link-square-alt'></i></a>" : ''}
             ${portPiece.repoUrl ? "<a href='https://github.com/Garrison88/" + portPiece.repoUrl + "' class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect' target='_blank'>view repo <i class='fas fa-external-link-square-alt'></i></a>" : ''}
           </div>
         </div>`;

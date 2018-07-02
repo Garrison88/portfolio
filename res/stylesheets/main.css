@@ -22,6 +22,10 @@
   height: 100%;
 }
 
+.nav-link {
+  color: #404040 !important;
+}
+
 #center-nav-items {
   margin-right: auto;
   margin-left: auto;
@@ -30,18 +34,16 @@
 }
 
 #social-icons {
-  left: auto;
-  display: flex;
-  list-style-type: none;
+  display: none;
 }
 
 #social-icons li {
-  color: #2B2B2B;
+  color: #404040;
   padding: 10px;
 }
 
-.fab {
-  color: #2B2B2B;
+.social-icon {
+  color: #404040;
 }
 
 .to-top-hidden {
@@ -62,11 +64,19 @@
   min-width: 0;
 }
 
+@media (min-width: 478px) {
+  #social-icons {
+    left: auto;
+    display: flex;
+    list-style-type: none;
+  }
+}
+
 #section-header {
   display: grid;
   grid-template-rows: auto auto 1fr;
   grid-template-areas: "name" "info" "cv";
-  background-image: url("http://gdurl.com/Ink6");
+  background-image: url("http://gdurl.com/Fl4R");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -76,6 +86,7 @@
 
 #section-header h1 {
   margin-top: 35px;
+  letter-spacing: 4px;
   margin-bottom: 0;
   grid-area: name;
   font-size: 10vw;
@@ -197,6 +208,7 @@
 #section-portfolio h4 {
   text-align: center;
   font-family: 'Roboto Slab', serif;
+  width: 100%;
   color: #f3f3f3;
   text-transform: uppercase;
   background-color: #ff5252;
@@ -229,6 +241,15 @@
   background-color: #ff5252;
 }
 
+.mdl-mini-footer {
+  background-color: #404040 !important;
+  justify-content: center !important;
+}
+
+#footer-social-icons i {
+  color: #f3f3f3 !important;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -243,6 +264,7 @@ html {
 }
 
 body {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 3px 6px;
   margin: 0px;
 }
 
