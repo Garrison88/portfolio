@@ -76,7 +76,7 @@
   display: grid;
   grid-template-rows: auto auto 1fr;
   grid-template-areas: "name" "info" "cv";
-  background-image: url("http://gdurl.com/Fl4R");
+  background-image: url("../../../res/img/computer-edited.jpeg");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -146,7 +146,7 @@
 
 #about-avatar {
   border-radius: 50%;
-  padding-top: 20px;
+  margin-top: 20px;
   grid-area: avatar;
   object-fit: cover;
   max-width: 60%;
@@ -181,7 +181,7 @@
     grid-template-areas: "avatar desc" "skills skills";
   }
   #about-avatar {
-    padding: 20px 0;
+    margin: 20px 0;
   }
   #skills-container img {
     padding: 10px;

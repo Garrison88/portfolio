@@ -1,4 +1,4 @@
-const icons = ["res/img/skills-icons/html5.png", "res/img/skills-icons/css3.png", "res/img/skills-icons/javascript.png", "res/img/skills-icons/jquery.png", "res/img/skills-icons/sass.png", "res/img/skills-icons/nodejs.png", "res/img/skills-icons/mongodb.png", "res/img/skills-icons/express.png", "res/img/skills-icons/java.png", "res/img/skills-icons/androidstudio.png", "res/img/skills-icons/illustrator.png"];
+const icons = ["res/img/skills-icons/html5.png", "res/img/skills-icons/css3.png", "res/img/skills-icons/javascript.png", "res/img/skills-icons/jquery.png", "res/img/skills-icons/sass.png", "res/img/skills-icons/nodejs.png", "res/img/skills-icons/mongodb.png", "res/img/skills-icons/express.png", "res/img/skills-icons/java.png", "res/img/skills-icons/androidstudio.png", "res/img/skills-icons/illustrator.png", "res/img/skills-icons/github.png"];
 
 const portPieces = [     
     {

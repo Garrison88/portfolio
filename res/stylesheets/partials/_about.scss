@@ -19,7 +19,7 @@
 
 #about-avatar {
     border-radius: 50%;
-    padding-top: 20px;
+    margin-top: 20px;
     grid-area: avatar;
     object-fit: cover;
     max-width: 60%;
@@ -59,7 +59,7 @@
                              "skills skills";
     }
     #about-avatar {
-        padding: 20px 0;
+        margin: 20px 0;
     }
 
     #about-description {
