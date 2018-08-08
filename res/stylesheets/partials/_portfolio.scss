@@ -15,15 +15,10 @@
 }
 
 #section-portfolio h4 {
-    // font-size: 2vw;
-    
-    // width: 100vw;
     text-align: center;
     font-family: 'Roboto Slab', serif;
-    // font-weight: 200;
     width: 100%;
     color: $off-white;
-    // font-weight: 600;
     text-transform: uppercase;
     background-color: $red;
 }
@@ -36,10 +31,6 @@
 .port-piece .mdl-card__title {
     color: $off-white;
 }
-
-// .icon {
-//     height: inherit;
-// }
 
 @media (min-width: 769px) {
     #section-portfolio {

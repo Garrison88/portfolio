@@ -1,4 +1,4 @@
-const icons = ["res/img/skills-icons/html5.png", "res/img/skills-icons/css3.png", "res/img/skills-icons/javascript.png", "res/img/skills-icons/jquery.png", "res/img/skills-icons/sass.png", "res/img/skills-icons/nodejs.png", "res/img/skills-icons/mongodb.png", "res/img/skills-icons/express.png", "res/img/skills-icons/java.png", "res/img/skills-icons/androidstudio.png", "res/img/skills-icons/illustrator.png", "res/img/skills-icons/github.png"];
+const icons = ["html5.png", "css3.png", "javascript.png", "jquery.png", "sass.png", "nodejs.png", "mongodb.png", "firebase.png", "express.png", "java.png", "androidstudio.png", "illustrator.png", "github.png"];
 
 const portPieces = [     
     {
@@ -34,15 +34,6 @@ const portPieces = [
       thumbPath: 'dawn-ayer.png'
     }
   ];
-
-//   var socialIcons = document.querySelectorAll('.social-icon');
-
-//   // window.onResize = function() {
-//     for (socialIcon of socialIcons){
-//     console.log("test");
-//     window.innerWidth <= 600 ? socialIcons.classList.remove('fa-2x') : socialIcons.classList.add('fa-2x');
-//   // };
-// }
 
 function htmlToElements(portPieces) {
   const container = document.getElementById('portfolio-container');
@@ -85,7 +76,7 @@ function createList(items, container, elementType) {
   let list = document.getElementById(container);
   for (let item in items) {
     let node = document.createElement(elementType);
-    node.src = items[item];
+    node.src = `res/img/skills-icons/${items[item]}`;
     list.appendChild(node);
   }
 }

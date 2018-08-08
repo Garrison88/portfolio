@@ -26,13 +26,9 @@
     height: auto;
 }
 
-// #about-description {
-// }
-
 #about-description {
     grid-area: desc;
     margin: 0;
-    // font-family: 'Roboto', sans-serif;
 }
 
 #skills-container {
@@ -62,9 +58,6 @@
         margin: 20px 0;
     }
 
-    #about-description {
-        // padding-right: 20px;
-    }
     #skills-container img {
         padding: 10px;
         max-height:100px;
