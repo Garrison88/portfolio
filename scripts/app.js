@@ -22,7 +22,7 @@ const portPieces = [
     },
     {
       title: 'RGB Game',
-      siteUrl: 'rgb-guessing-game-garrison.herokuapp.com/game-page.html',
+      siteUrl: 'garrison88.github.io/rgb-guessing-game/game-page.html',
       repoUrl: 'rgb-guessing-game',
       description: 'Guess that RBG value!',
       thumbPath: 'colour-game.png'
