@@ -16,7 +16,7 @@
 #section-header h1 {
     margin-top: 35px;
     letter-spacing: 4px;
-    margin-bottom: 0;
+    margin-bottom: -1px;
     grid-area: name;
     font-size: 10vw;
     background-color: $red;
@@ -26,7 +26,7 @@
 }
 
 #section-header h4 {
-    margin-top: 0;
+    margin-top: -1px;
     grid-area: info;
     background-color: $red;
     bottom: 2.5em;

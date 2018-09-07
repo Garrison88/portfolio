@@ -8,6 +8,12 @@ const portPieces = [
       thumbPath: 'roi.png'
     },
     {
+      title: 'SteveFerguson.ca',
+      siteUrl: 'stevefergusonpec.ca/',
+      description: 'Campaign website for mayoral candidate',
+      thumbPath: 'steve-ferguson.png'
+    },
+    {
       title: 'TomKat Creative',
       siteUrl: 'www.tomkatcreative.com/',
       repoUrl: 'tomkat-creative',
@@ -48,7 +54,7 @@ function htmlToElements(portPieces) {
           </div>
           <div class="mdl-card__actions mdl-card--border" style='display:list-item'>
           ${portPiece.siteUrl ? "<a href='https://" + portPiece.siteUrl + "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>view site <i class='fas fa-external-link-square-alt'></i></a>" : ''}
-            ${portPiece.repoUrl ? "<a href='https://github.com/Garrison88/" + portPiece.repoUrl + "' class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect' target='_blank'>view repo <i class='fas fa-external-link-square-alt'></i></a>" : ''}
+            ${portPiece.repoUrl ? "<a href='https://github.com/Garrison88/" + portPiece.repoUrl + "' class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect' target='_blank'>view repo <i class='fab fa-github'></i></a>" : ''}
           </div>
         </div>`;
   let template = document.createElement('template');

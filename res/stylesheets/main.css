@@ -105,7 +105,7 @@
 #section-header h1 {
   margin-top: 35px;
   letter-spacing: 4px;
-  margin-bottom: 0;
+  margin-bottom: -1px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: name;
@@ -117,7 +117,7 @@
 }
 
 #section-header h4 {
-  margin-top: 0;
+  margin-top: -1px;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: info;
