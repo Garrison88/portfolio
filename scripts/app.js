@@ -2,9 +2,10 @@ const icons = ["html5.png", "css3.png", "javascript.png", "jquery.png", "sass.pn
 
 const portPieces = [     
     {
-      title: 'Native Android App',
+      title: 'Android App',
+      appUrl: 'play.google.com/store/apps/details?id=com.garrisonthomas.junkapp',
       repoUrl: 'JunkApp-2.0',
-      description: 'Android app created for junk removal company',
+      description: 'Daily log app created for junk removal company',
       thumbPath: 'roi.png'
     },
     {
@@ -54,6 +55,7 @@ function htmlToElements(portPieces) {
           </div>
           <div class="mdl-card__actions mdl-card--border" style='display:list-item'>
           ${portPiece.siteUrl ? "<a href='https://" + portPiece.siteUrl + "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>view site <i class='fas fa-external-link-square-alt'></i></a>" : ''}
+          ${portPiece.appUrl ? "<a href='https://" + portPiece.appUrl + "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>download app <i class='fas fa-download'></i></a>" : ''}
             ${portPiece.repoUrl ? "<a href='https://github.com/Garrison88/" + portPiece.repoUrl + "' class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect' target='_blank'>view repo <i class='fab fa-github'></i></a>" : ''}
           </div>
         </div>`;
