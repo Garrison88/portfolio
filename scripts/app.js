@@ -96,4 +96,3 @@ htmlToElements(portPieces);
 scrollToSection('header');
 scrollToSection('portfolio');
 scrollToSection('about');
-scrollToSection('contact');
