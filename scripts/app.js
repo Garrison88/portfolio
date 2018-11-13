@@ -1,17 +1,18 @@
 const icons = [
-  "html5.png",
-  "css3.png",
-  "javascript.png",
-  "jquery.png",
+  "kotlin.png",
+  "java.png",
+  "firebase.png",
+  "androidstudio.png",
+  "html_css_js.png",
   "sass.png",
+  "github.png",
+  // "html5.png",
+  // "css3.png",
+  // "javascript.png",
   "nodejs.png",
   "mongodb.png",
-  "firebase.png",
   "express.png",
-  "java.png",
-  "androidstudio.png",
-  "illustrator.png",
-  "github.png"
+  "illustrator.png"
 ];
 
 const portPieces = [
