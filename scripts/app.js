@@ -1,33 +1,33 @@
 const icons = [
-  "kotlin.png",
   "java.png",
+  "kotlin.png",
+  "dart.png",
+  "flutter.png",
   "firebase.png",
   "androidstudio.png",
-  "html_css_js.png",
-  "sass.png",
-  "github.png",
-  // "html5.png",
-  // "css3.png",
-  // "javascript.png",
-  "nodejs.png",
-  "mongodb.png",
-  "express.png",
-  "illustrator.png"
+  "html_css_js.png"
+  // "sass.png"
+  // "github.png"
+  // "nodejs.png",
+  // "mongodb.png",
+  // "express.png"
+  // "illustrator.png"
 ];
 
 const portPieces = [
   {
     title: "Travel Advisories",
+    appUrl: "https://play.google.com/store/apps/details?id=com.thomas.garrison.traveladvisories",
     repoUrl: "travel-advisories",
     description: "Kotlin, Room, Retrofit, REST APIs. Add trips and view advisories",
-    thumbPath: "travel-advisories.png"
+    thumbPath: "travel_advisories_feature_graphic.png"
   },
   {
-    title: "Android App",
+    title: "Junk App 2.0",
     appUrl: "play.google.com/store/apps/details?id=com.garrisonthomas.junkapp",
     repoUrl: "JunkApp-2.0",
     description: "Java, Firebase, Material Design. Daily log app for junk removal company",
-    thumbPath: "roi.png"
+    thumbPath: "roi_feature_graphic.png"
   },
   {
     title: "SteveFerguson.ca",
@@ -87,7 +87,7 @@ function htmlToElements(portPieces) {
             portPiece.appUrl
               ? "<a href='https://" +
                 portPiece.appUrl +
-                "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>download app <i class='fas fa-download'></i></a>"
+                "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>google play <i class='fab fa-google-play'></i></a>"
               : ""
           }
             ${
