@@ -17,7 +17,7 @@ const icons = [
 const portPieces = [
   {
     title: "Travel Advisories",
-    appUrl: "https://play.google.com/store/apps/details?id=com.thomas.garrison.traveladvisories",
+    appUrl: "play.google.com/store/apps/details?id=com.thomas.garrison.traveladvisories",
     repoUrl: "travel-advisories",
     description: "Kotlin, Room, Retrofit, REST APIs. Add trips and view advisories",
     thumbPath: "travel_advisories_feature_graphic.png"
