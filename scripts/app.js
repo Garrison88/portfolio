@@ -16,17 +16,27 @@ const icons = [
 
 const portPieces = [
   {
+    title: "Gloomhaven Calculator",
+    repoUrl: "gloomhaven-enhancement-calculator",
+    description:
+      "Flutter, Dart, Material Design. Easily calculate the cost of a card enhancement in Gloomhaven",
+    thumbPath: "ghc.png"
+  },
+  {
     title: "Travel Advisories",
-    appUrl: "play.google.com/store/apps/details?id=com.thomas.garrison.traveladvisories",
+    appUrl:
+      "play.google.com/store/apps/details?id=com.thomas.garrison.traveladvisories",
     repoUrl: "travel-advisories",
-    description: "Kotlin, Room, Retrofit, REST APIs. Add trips and view advisories",
+    description:
+      "Kotlin, Room, Retrofit, REST APIs. Add trips and view advisories",
     thumbPath: "travel_advisories_feature_graphic.png"
   },
   {
     title: "Junk App 2.0",
     appUrl: "play.google.com/store/apps/details?id=com.garrisonthomas.junkapp",
     repoUrl: "JunkApp-2.0",
-    description: "Java, Firebase, Material Design. Daily log app for junk removal company",
+    description:
+      "Java, Firebase, Material Design. Daily log app for junk removal company",
     thumbPath: "roi_feature_graphic.png"
   },
   {
