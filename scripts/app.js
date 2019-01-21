@@ -17,6 +17,7 @@ const icons = [
 const portPieces = [
   {
     title: "Gloomhaven Calculator",
+    appUrl: "tomkatcreative.gloomhavenenhancementcalc",
     repoUrl: "gloomhaven-enhancement-calculator",
     description:
       "Flutter, Dart, Material Design. Easily calculate the cost of a card enhancement in Gloomhaven",
@@ -24,8 +25,7 @@ const portPieces = [
   },
   {
     title: "Travel Advisories",
-    appUrl:
-      "play.google.com/store/apps/details?id=com.thomas.garrison.traveladvisories",
+    appUrl: "com.thomas.garrison.traveladvisories",
     repoUrl: "travel-advisories",
     description:
       "Kotlin, Room, Retrofit, REST APIs. Add trips and view advisories",
@@ -33,7 +33,7 @@ const portPieces = [
   },
   {
     title: "Junk App 2.0",
-    appUrl: "play.google.com/store/apps/details?id=com.garrisonthomas.junkapp",
+    appUrl: "com.garrisonthomas.junkapp",
     repoUrl: "JunkApp-2.0",
     description:
       "Java, Firebase, Material Design. Daily log app for junk removal company",
@@ -95,7 +95,7 @@ function htmlToElements(portPieces) {
           }
           ${
             portPiece.appUrl
-              ? "<a href='https://" +
+              ? "<a href='https://play.google.com/store/apps/details?id=" +
                 portPiece.appUrl +
                 "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>google play <i class='fab fa-google-play'></i></a>"
               : ""
