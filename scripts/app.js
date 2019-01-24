@@ -16,11 +16,11 @@ const icons = [
 
 const portPieces = [
   {
-    title: "Gloomhaven Calculator",
+    title: "Gloomhaven",
     appUrl: "tomkatcreative.gloomhavenenhancementcalc",
     repoUrl: "gloomhaven-enhancement-calculator",
     description:
-      "Flutter, Dart, Material Design. Easily calculate the cost of a card enhancement in Gloomhaven",
+      "Flutter, Dart, Material Design. Calculate the cost of a card enhancement",
     thumbPath: "ghc.png"
   },
   {
