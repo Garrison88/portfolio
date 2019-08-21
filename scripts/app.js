@@ -20,7 +20,7 @@ const portPieces = [
     appUrl: "ca.taklafn.taklafishtracker",
     description:
       "Flutter, Dart, Firebase. Track your catches and win prizes!",
-    thumbPath: "ghc.png"
+    thumbPath: "tft.png"
   },
   {
     title: "Gloomhaven",
