@@ -19,7 +19,7 @@ const portPieces = [
     title: "Takla Fish Tracker",
     appUrl: "ca.taklafn.taklafishtracker",
     description:
-      "Flutter, Dart, Firebase. Track your catches and win prizes!",
+      "Flutter, Dart, Firebase. Track your catches and win prizes! Available on both Android and iOS",
     thumbPath: "tft.png"
   },
   {
@@ -27,7 +27,7 @@ const portPieces = [
     appUrl: "tomkatcreative.gloomhavenenhancementcalc",
     repoUrl: "gloomhaven-enhancement-calculator",
     description:
-      "Flutter, Dart, Material Design. Calculate the cost of a card enhancement. 6,000+ downloads.",
+      "Flutter, Dart, Material Design. Calculate the cost of a card enhancement. 6,000+ downloads",
     thumbPath: "ghc.png"
   },
   {
@@ -85,8 +85,8 @@ function htmlToElements(portPieces) {
   for (let portPiece of portPieces) {
     let portTemplate = `<div class="port-piece demo-card-square mdl-card mdl-shadow--8dp">
           <div style="background: url('./res/img/portfolio/${
-            portPiece.thumbPath
-          }') center / cover no-repeat" class="mdl-card__title mdl-card--expand">
+      portPiece.thumbPath
+      }') center / cover no-repeat" class="mdl-card__title mdl-card--expand">
           </div>
           <div class="mdl-card__supporting-text">
           <h2 class="mdl-card__title-text">${portPiece.title}</h2>
@@ -94,26 +94,26 @@ function htmlToElements(portPieces) {
           </div>
           <div class="mdl-card__actions mdl-card--border" style='display:list-item'>
           ${
-            portPiece.siteUrl
-              ? "<a href='https://" +
-                portPiece.siteUrl +
-                "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>view site <i class='fas fa-external-link-square-alt'></i></a>"
-              : ""
-          }
+      portPiece.siteUrl
+        ? "<a href='https://" +
+        portPiece.siteUrl +
+        "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>view site <i class='fas fa-external-link-square-alt'></i></a>"
+        : ""
+      }
           ${
-            portPiece.appUrl
-              ? "<a href='https://play.google.com/store/apps/details?id=" +
-                portPiece.appUrl +
-                "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>google play <i class='fab fa-google-play'></i></a>"
-              : ""
-          }
+      portPiece.appUrl
+        ? "<a href='https://play.google.com/store/apps/details?id=" 
+        + portPiece.appUrl 
+        + "&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>"
+        : ""
+      }
             ${
-              portPiece.repoUrl
-                ? "<a href='https://github.com/Garrison88/" +
-                  portPiece.repoUrl +
-                  "' class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect' target='_blank'>view repo <i class='fab fa-github'></i></a>"
-                : ""
-            }
+      portPiece.repoUrl
+        ? "<a href='https://github.com/Garrison88/" +
+        portPiece.repoUrl +
+        "' class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect' target='_blank'>view repo <i class='fab fa-github'></i></a>"
+        : ""
+      }
           </div>
         </div>`;
     let template = document.createElement("template");
@@ -122,7 +122,7 @@ function htmlToElements(portPieces) {
   }
 }
 
-window.onscroll = function() {
+window.onscroll = function () {
   window.pageYOffset > 200
     ? (document.getElementById("nav-header").className = "to-top-visible")
     : (document.getElementById("nav-header").className = "to-top-hidden");
