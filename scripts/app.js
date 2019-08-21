@@ -17,14 +17,16 @@ const icons = [
 const portPieces = [
   {
     title: "Takla Fish Tracker",
-    appUrl: "ca.taklafn.taklafishtracker",
+    playStoreUrl: "ca.taklafn.taklafishtracker",
+    appStoreUrl: "takla-fish-tracker/id1476625954",
     description:
-      "Flutter, Dart, Firebase. Track your catches and win prizes! Available on both Android and iOS",
+      "Flutter, Dart, Firebase. Track your catches, promote conservation, and win prizes!",
     thumbPath: "tft.png"
   },
   {
     title: "Gloomhaven",
-    appUrl: "tomkatcreative.gloomhavenenhancementcalc",
+    playStoreUrl: "tomkatcreative.gloomhavenenhancementcalc",
+    appStoreUrl: "gloomhaven-utility/id1474725845",
     repoUrl: "gloomhaven-enhancement-calculator",
     description:
       "Flutter, Dart, Material Design. Calculate the cost of a card enhancement. 6,000+ downloads",
@@ -32,7 +34,7 @@ const portPieces = [
   },
   {
     title: "Travel Advisories",
-    appUrl: "com.thomas.garrison.traveladvisories",
+    playStoreUrl: "com.thomas.garrison.traveladvisories",
     repoUrl: "travel-advisories",
     description:
       "Kotlin, Room, Retrofit, REST APIs. Add trips and view advisories",
@@ -40,7 +42,7 @@ const portPieces = [
   },
   {
     title: "Junk App 2.0",
-    appUrl: "com.garrisonthomas.junkapp",
+    playStoreUrl: "com.garrisonthomas.junkapp",
     repoUrl: "JunkApp-2.0",
     description:
       "Java, Firebase, Material Design. Daily log app for junk removal company",
@@ -97,14 +99,21 @@ function htmlToElements(portPieces) {
       portPiece.siteUrl
         ? "<a href='https://" +
         portPiece.siteUrl +
-        "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>view site <i class='fas fa-external-link-square-alt'></i></a>"
+        "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>visit site <i class='fas fa-external-link-square-alt'></i></a>"
         : ""
       }
           ${
-      portPiece.appUrl
-        ? "<a href='https://play.google.com/store/apps/details?id=" 
-        + portPiece.appUrl 
-        + "&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>"
+      portPiece.playStoreUrl
+        ? "<a href='https://play.google.com/store/apps/details?id=" +
+        portPiece.playStoreUrl +
+        "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>google play <i class='fab fa-google-play'></i></a>"
+        : ""
+      }
+      ${
+      portPiece.appStoreUrl
+        ? "<a href='https://apps.apple.com/ca/app/" +
+        portPiece.appStoreUrl +
+        "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>app store <i class='fab fa-app-store-ios'></i></a>"
         : ""
       }
             ${

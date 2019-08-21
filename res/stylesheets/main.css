@@ -90,7 +90,7 @@
   display: -ms-grid;
   display: grid;
       grid-template-rows: auto auto 1fr;
-      grid-template-areas: "name" "info" "cv";
+      grid-template-areas: "name" "info" "cv";
   background-image: url("../../../res/img/computer-edited.jpeg");
   background-size: cover;
   background-position: center;
@@ -165,7 +165,7 @@
   display: -ms-grid;
   display: grid;
       grid-template-columns: 1fr;
-      grid-template-areas: "avatar" "desc" "skills";
+      grid-template-areas: "avatar" "desc" "skills";
   text-align: center;
   background-color: #f3f3f3;
   justify-items: center;
@@ -222,7 +222,7 @@
     width: auto;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "avatar desc" "skills skills";
+        grid-template-areas: "avatar desc" "skills skills";
   }
   #about-avatar {
     margin: 20px 0;
@@ -256,7 +256,7 @@
 
 #section-portfolio h4 {
   text-align: center;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   width: 100%;
   color: #f3f3f3;
   text-transform: uppercase;
@@ -270,6 +270,10 @@
 
 .port-piece .mdl-card__title {
   color: #f3f3f3;
+}
+
+.mdl-button--accent.mdl-button--accent.mdl-button--raised.mdl-button.mdl-button--colored {
+  vertical-align: super;
 }
 
 @media (min-width: 769px) {
@@ -329,12 +333,12 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
-      grid-template-areas: "n n n n n n n n n n n n" "h h h h h h h h h h h h" ". a a a a a a a a a a ." ". p p p p p p p p p p ." "f f f f f f f f f f f f";
+      grid-template-areas: "n n n n n n n n n n n n" "h h h h h h h h h h h h" ". a a a a a a a a a a ." ". p p p p p p p p p p ." "f f f f f f f f f f f f";
 }
 
 @media only screen and (min-width: 769px) {
   .grid-container {
-        grid-template-areas: "n n n n n n n n n n n n" "h h h h h h h h h h h h" ". . . a a a a a a . . ." ". . p p p p p p p p . ." "f f f f f f f f f f f f";
+        grid-template-areas: "n n n n n n n n n n n n" "h h h h h h h h h h h h" ". . . a a a a a a . . ." ". . p p p p p p p p . ." "f f f f f f f f f f f f";
   }
 }
 /*# sourceMappingURL=main.css.map */
