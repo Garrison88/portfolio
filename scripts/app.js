@@ -16,11 +16,18 @@ const icons = [
 
 const portPieces = [
   {
+    title: "Takla Fish Tracker",
+    appUrl: "ca.taklafn.taklafishtracker",
+    description:
+      "Flutter, Dart, Firebase. Track your catches and win prizes!",
+    thumbPath: "ghc.png"
+  },
+  {
     title: "Gloomhaven",
     appUrl: "tomkatcreative.gloomhavenenhancementcalc",
     repoUrl: "gloomhaven-enhancement-calculator",
     description:
-      "Flutter, Dart, Material Design. Calculate the cost of a card enhancement",
+      "Flutter, Dart, Material Design. Calculate the cost of a card enhancement. 6,000+ downloads.",
     thumbPath: "ghc.png"
   },
   {
