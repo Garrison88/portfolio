@@ -49,12 +49,6 @@ const portPieces = [
     thumbPath: "roi_feature_graphic.png"
   },
   {
-    title: "SteveFerguson.ca",
-    siteUrl: "stevefergusonpec.ca/",
-    description: "Campaign website for mayoral candidate",
-    thumbPath: "steve-ferguson.png"
-  },
-  {
     title: "TomKat Creative",
     siteUrl: "www.tomkatcreative.com/",
     repoUrl: "tomkat-creative",

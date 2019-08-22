@@ -10,7 +10,7 @@
   margin: 5px 0;
   bottom: 50px;
   grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 #section-portfolio h4 {
@@ -31,7 +31,15 @@
   color: $off-white;
 }
 
-.mdl-button--accent.mdl-button--accent.mdl-button--raised.mdl-button.mdl-button--colored {
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+  margin-bottom: 8px;
+}
+
+.mdl-button--accent
+.mdl-button--accent
+.mdl-button--raised
+.mdl-button
+.mdl-button--colored {
   vertical-align: super;
 }
 
