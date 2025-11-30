@@ -1,85 +1,354 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Garrison - Developer</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Yantramanav:900|Roboto:400,500|Roboto+Slab" rel="stylesheet"> 
-        <link rel="stylesheet" href="res/stylesheets/main.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    </head>
-    <body>
-        <div class="grid-container">
-            <!-- NAVIGATION SECTION -->
-            <div id="section-navigation">
-                <div id="nav">
-                    <ul>
-                        <div id="center-nav-items">
-                            <li class="nav-item to-top-hidden" id="nav-header"><a href="#header"><button id="return-to-top" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent mdl-button--raised"><i class="fas fa-arrow-up"></i></button></a></li>
-                            <li class="nav-item" id="nav-about"><a href="#about"><button class="nav-link mdl-button mdl-js-button mdl-js-ripple-effect">About</button></a></li>
-                            <li class="nav-item" id="nav-portfolio"><a href="#portfolio"><button class="nav-link mdl-button mdl-js-button mdl-js-ripple-effect">Portfolio</button></a></li>
-                        </div>
-                        <div id="social-icons">
-                                <li><a href="https://github.com/Garrison88" target="_blank"><i class="social-icon fab fa-github-square fa-2x"></i></a></li>
-                                <li><a href="https://twitter.com/GarrisonSiberry" target="_blank"><i class="social-icon fab fa-twitter-square fa-2x"></i></a></li>
-                                <li><a href="https://linkedin.com/in/garrisonsiberry" target="_blank"><i class="social-icon fab fa-linkedin fa-2x"></i></a></li>
-                                <li><a href="mailto:garrison.siberry@gmail.com"><i class="social-icon fas fa-envelope-square fa-2x"></i></a></li>
-                        </div>
-                    </ul>
+<html lang="en" data-theme="light" data-accent="coral">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garrison Siberry | Software Engineer</title>
+    <meta name="description"
+        content="Senior Software Engineer specializing in mobile development with Flutter, Dart, and native Android.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="res/stylesheets/main.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo">G. Siberry</a>
+
+            <ul class="nav__links">
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#resume" class="nav__link">Resume</a></li>
+            </ul>
+
+            <div class="nav__actions">
+                <div class="nav__social">
+                    <a href="https://github.com/Garrison88" target="_blank" class="nav__social-link"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/garrisonsiberry" target="_blank" class="nav__social-link"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/GarrisonSiberry" target="_blank" class="nav__social-link"
+                        aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:garrison.siberry@gmail.com" class="nav__social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
+
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
             </div>
-            <!-- HEADER SECTION -->
-            <div id="section-header">
-                <h1 class="display-4">garrison siberry</h1>
-                <h4>mobile + web</h4>
-                <a href="https://docs.google.com/document/d/1VSVN7K-wA05Ow3vkh2WGi3QdOTuM3NnIpYOdR1B8Ins/edit?usp=sharing" target="_blank"><button id="cv-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">view cv .pdf <i class='fas fa-external-link-square-alt'></i></button></a>
-            </div>
-            <!-- ABOUT SECTION -->
-            <div id="section-about" class="mdl-card mdl-shadow--8dp">
-                <img id="about-avatar" src='res/img/avatar.jpeg'>
-                <div class="mdl-card__supporting-text">
-                    <p id="about-description">
-                    I love solving problems and writing efficient code, and I believe consolidating code can be as productive as writing it.<br>
-                    My obssession with programming began with a deep dive into Android. I designed, developed, and deployed a 
-                    logistics app for a Toronto based junk removal company. More recently, I completed a contract to build a fish tracking app for a First Nations community in Northern B.C.<br>
-                    Along with native development, I also use Dart and the Flutter framework to build for both Android and iOS with one codebase.
-                </p>
-                </div>
-                <div id="skills-container">
-                    <!-- IMG GENERATED IN APP.JS -->
-                </div>
-            </div>
-            <!-- <hr> -->
-            <!-- PORTFOLIO SECTION -->
-            <div id="section-portfolio">
-                <h4>portfolio</h4>
-                <div id="portfolio-container">
-                    <!-- TEMPLATES GENERATED IN APP.JS -->
+
+            <button class="nav__menu-btn" id="menuBtn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="nav__mobile" id="mobileMenu">
+        <ul class="nav__mobile-links">
+            <li><a href="#about" class="nav__mobile-link">About</a></li>
+            <li><a href="#projects" class="nav__mobile-link">Projects</a></li>
+            <li><a href="#resume" class="nav__mobile-link">Resume</a></li>
+        </ul>
+        <div class="nav__mobile-social">
+            <a href="https://github.com/Garrison88" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/garrisonsiberry" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/GarrisonSiberry" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:garrison.siberry@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <!-- Add class "hero--with-image" and set your background image in CSS to enable hero image -->
+    <section class="hero" id="hero">
+        <div class="hero__content">
+            <span class="hero__label">Software Engineer</span>
+            <h1 class="hero__title">Garrison Siberry</h1>
+            <p class="hero__subtitle">Building polished mobile experiences with Flutter, Dart, and native Android</p>
+            <a href="#projects" class="hero__cta">
+                View My Work
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="section__container">
+            <header class="section__header">
+                <span class="section__label">About Me</span>
+                <h2 class="section__title">A Bit About Myself</h2>
+            </header>
+
+            <div class="about__content">
+                <!-- PLACEHOLDER: Replace with your avatar image (400x400px) -->
+                <img src="res/img/avatar.jpeg" alt="Garrison Siberry" class="about__avatar">
+
+                <div class="about__text">
+                    <p>
+                        I love solving problems and writing efficient code, and I believe consolidating code can be as
+                        productive as writing it.
+                    </p>
+                    <p>
+                        My obsession with programming began with a deep dive into Android. I designed, developed, and
+                        deployed a logistics app for a Toronto-based junk removal company. More recently, I completed a
+                        contract to build a fish tracking app for a First Nations community in Northern B.C.
+                    </p>
+                    <p>
+                        Along with native development, I also use Dart and the Flutter framework to build for both
+                        Android and iOS with one codebase.
+                    </p>
+
+                    <div class="about__skills">
+                        <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fab fa-android"></i> Kotlin</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> Dart</span>
+                        <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Flutter</span>
+                        <span class="skill-tag"><i class="fas fa-fire"></i> Firebase</span>
+                        <span class="skill-tag"><i class="fab fa-android"></i> Android Studio</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
-    <div id="section-footer">
-        <footer class="mdl-mini-footer">
-            <div class="mdl-mini-footer__left-section">
-                <div class="mdl-logo">&#169; 2019 Garrison Siberry</div>
-                <ul id="footer-social-icons" class="mdl-mini-footer__link-list">
-                    <li><a href="https://github.com/Garrison88" target="_blank"><i class="social-icon fab fa-github-square fa-2x"></i></a></li>
-                    <li><a href="https://twitter.com/GarrisonSiberry" target="_blank"><i class="social-icon fab fa-twitter-square fa-2x"></i></a></li>
-                    <li><a href="https://linkedin.com/in/garrisonsiberry" target="_blank"><i class="social-icon fab fa-linkedin fa-2x"></i></a></li>
-                    <li><a href="mailto:garrison.siberry@gmail.com"><i class="social-icon fas fa-envelope-square fa-2x"></i></a></li>
-                </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="section__container">
+            <header class="section__header">
+                <span class="section__label">My Work</span>
+                <h2 class="section__title">Featured Projects</h2>
+            </header>
+
+            <div class="projects__grid">
+                <!-- Project 1: Takla Wildlife Tracker -->
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <!-- PLACEHOLDER: Replace with project thumbnail (600x400px) -->
+                        <img src="res/img/portfolio/tft.png" alt="Takla Wildlife Tracker">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Takla Wildlife Tracker</h3>
+                        <p class="project-card__tech">Flutter • Dart • Firebase</p>
+                        <p class="project-card__description">
+                            Track wildlife sightings, promote conservation, and win prizes! Built for a First Nations
+                            community in Northern B.C.
+                        </p>
+                        <div class="project-card__links">
+                            <a href="https://play.google.com/store/apps/details?id=ca.taklafn.wildlifetracker"
+                                target="_blank" class="project-link project-link--primary">
+                                <i class="fab fa-google-play"></i> Google Play
+                            </a>
+                            <a href="https://apps.apple.com/ca/app/takla-wildlife-tracker/id1539312493" target="_blank"
+                                class="project-link project-link--secondary">
+                                <i class="fab fa-app-store-ios"></i> App Store
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Gloomhaven Companion -->
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <!-- PLACEHOLDER: Replace with project thumbnail (600x400px) -->
+                        <img src="res/img/portfolio/ghc.png" alt="Gloomhaven Companion">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Gloomhaven Companion</h3>
+                        <p class="project-card__tech">Flutter • Dart • Material Design 3</p>
+                        <p class="project-card__description">
+                            Calculate card enhancement costs and track characters. Over 50,000 downloads with a 4.9★
+                            rating.
+                        </p>
+                        <div class="project-card__links">
+                            <a href="https://play.google.com/store/apps/details?id=tomkatcreative.gloomhavenenhancementcalc"
+                                target="_blank" class="project-link project-link--primary">
+                                <i class="fab fa-google-play"></i> Google Play
+                            </a>
+                            <a href="https://apps.apple.com/ca/app/gloomhaven-utility/id1474725845" target="_blank"
+                                class="project-link project-link--secondary">
+                                <i class="fab fa-app-store-ios"></i> App Store
+                            </a>
+                            <a href="https://github.com/Garrison88/gloomhaven-enhancement-calculator" target="_blank"
+                                class="project-link project-link--secondary">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </footer>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="section" id="resume">
+        <div class="section__container">
+            <header class="section__header">
+                <span class="section__label">Experience</span>
+                <h2 class="section__title">My Resume</h2>
+            </header>
+
+            <div class="resume__wrapper">
+                <div class="resume__actions">
+                    <h3 class="resume__title">Resume</h3>
+                    <div class="resume__buttons">
+                        <a href="https://docs.google.com/document/d/1VSVN7K-wA05Ow3vkh2WGi3QdOTuM3NnIpYOdR1B8Ins/export?format=pdf"
+                            target="_blank" class="resume-btn resume-btn--download">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                        <a href="https://docs.google.com/document/d/1VSVN7K-wA05Ow3vkh2WGi3QdOTuM3NnIpYOdR1B8Ins/edit"
+                            target="_blank" class="resume-btn resume-btn--external">
+                            <i class="fas fa-external-link-alt"></i> View in Google Docs
+                        </a>
+                    </div>
+                </div>
+                <iframe src="https://docs.google.com/document/d/1VSVN7K-wA05Ow3vkh2WGi3QdOTuM3NnIpYOdR1B8Ins/preview"
+                    class="resume__embed" title="Resume">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__copy">© 2025 Garrison Siberry. All rights reserved.</p>
+            <div class="footer__social">
+                <a href="https://github.com/Garrison88" target="_blank" class="footer__social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/garrisonsiberry" target="_blank" class="footer__social-link"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/GarrisonSiberry" target="_blank" class="footer__social-link"
+                    aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:garrison.siberry@gmail.com" class="footer__social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Picker (Color Accent) -->
+    <div class="theme-picker" id="themePicker">
+        <button class="theme-picker__toggle" aria-label="Change accent color">
+            <i class="fas fa-palette"></i>
+        </button>
+        <div class="theme-picker__panel">
+            <div class="theme-picker__label">Accent Color</div>
+            <div class="theme-picker__colors">
+                <button class="color-btn color-btn--coral" data-accent="coral" aria-label="Coral theme"></button>
+                <button class="color-btn color-btn--teal" data-accent="teal" aria-label="Teal theme"></button>
+                <button class="color-btn color-btn--indigo" data-accent="indigo" aria-label="Indigo theme"></button>
+                <button class="color-btn color-btn--amber" data-accent="amber" aria-label="Amber theme"></button>
+            </div>
+        </div>
     </div>
-    <!-- JQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
-    crossorigin="anonymous"></script>
-    <script src="scripts/app.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <!-- Material Design Lite -->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-red.min.css">  
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <script>
+        // Theme Toggle (Light/Dark)
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to light
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Accent Color Picker
+        const themePicker = document.getElementById('themePicker');
+        const pickerToggle = themePicker.querySelector('.theme-picker__toggle');
+        const colorButtons = themePicker.querySelectorAll('.color-btn');
+
+        // Check for saved accent preference or default to coral
+        const savedAccent = localStorage.getItem('accent') || 'coral';
+        html.setAttribute('data-accent', savedAccent);
+
+        pickerToggle.addEventListener('click', () => {
+            themePicker.classList.toggle('is-open');
+        });
+
+        // Close picker when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!themePicker.contains(e.target)) {
+                themePicker.classList.remove('is-open');
+            }
+        });
+
+        colorButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const accent = btn.dataset.accent;
+                html.setAttribute('data-accent', accent);
+                localStorage.setItem('accent', accent);
+            });
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = mobileMenu.querySelectorAll('.nav__mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('is-open');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('is-open');
+                const icon = menuBtn.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+
+        // Smooth scroll offset for fixed nav (optional enhancement)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+
 </html>

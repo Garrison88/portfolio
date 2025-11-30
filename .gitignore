@@ -1,2 +1,32 @@
-node_modules
-npm-debug.log
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.swo
+
+# Dependencies
+node_modules/
+
+# SCSS cache
+.sass-cache/
+
+# Source maps (optional - remove if you want them tracked)
+*.map
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build output (if using a build tool)
+dist/
+build/
