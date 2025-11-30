@@ -16,29 +16,21 @@ const icons = [
 
 const portPieces = [
   {
-    title: "Takla Fish Tracker",
-    playStoreUrl: "ca.taklafn.taklafishtracker",
-    appStoreUrl: "takla-fish-tracker/id1476625954",
+    title: "Takla Wildlife Tracker",
+    playStoreUrl: "ca.taklafn.wildlifetracker",
+    appStoreUrl: "takla-wildlife-tracker/id1539312493",
     description:
-      "Flutter, Dart, Firebase. Track your catches, promote conservation, and win prizes!",
+      "Flutter, Dart, Firebase. Track wildlife sightings, promote conservation, and win prizes!",
     thumbPath: "tft.png"
   },
   {
-    title: "Gloomhaven",
+    title: "Gloomhaven Companion",
     playStoreUrl: "tomkatcreative.gloomhavenenhancementcalc",
     appStoreUrl: "gloomhaven-utility/id1474725845",
     repoUrl: "gloomhaven-enhancement-calculator",
     description:
-      "Flutter, Dart, Material Design. Calculate the cost of a card enhancement. 6,000+ downloads",
+      "Flutter, Dart, M3 Design. Calculate the cost of a card enhancement and track character. 50,000+ downloads. 4.9⭐ rating.",
     thumbPath: "ghc.png"
-  },
-  {
-    title: "Travel Advisories",
-    playStoreUrl: "com.thomas.garrison.traveladvisories",
-    repoUrl: "travel-advisories",
-    description:
-      "Kotlin, Room, Retrofit, REST APIs. Add trips and view advisories",
-    thumbPath: "travel_advisories_feature_graphic.png"
   },
   {
     title: "Junk App 2.0",
@@ -47,26 +39,6 @@ const portPieces = [
     description:
       "Java, Firebase, Material Design. Daily log app for junk removal company",
     thumbPath: "roi_feature_graphic.png"
-  },
-  {
-    title: "TomKat Creative",
-    siteUrl: "www.tomkatcreative.com/",
-    repoUrl: "tomkat-creative",
-    description: "Portfolio website for creative studio",
-    thumbPath: "tomkat.png"
-  },
-  {
-    title: "RGB Game",
-    siteUrl: "garrison88.github.io/rgb-guessing-game/game-page.html",
-    repoUrl: "rgb-guessing-game",
-    description: "Guess that RGB value!",
-    thumbPath: "colour-game.png"
-  },
-  {
-    title: "Yelp Camp",
-    siteUrl: "fast-cliffs-46179.herokuapp.com/",
-    description: "Camp reviewing website",
-    thumbPath: "yelp-camp.png"
   },
   {
     title: "DawnAyer.com",
@@ -80,8 +52,7 @@ function htmlToElements(portPieces) {
   const container = document.getElementById("portfolio-container");
   for (let portPiece of portPieces) {
     let portTemplate = `<div class="port-piece demo-card-square mdl-card mdl-shadow--8dp">
-          <div style="background: url('./res/img/portfolio/${
-      portPiece.thumbPath
+          <div style="background: url('./res/img/portfolio/${portPiece.thumbPath
       }') center / cover no-repeat" class="mdl-card__title mdl-card--expand">
           </div>
           <div class="mdl-card__supporting-text">
@@ -89,29 +60,25 @@ function htmlToElements(portPieces) {
               ${portPiece.description}
           </div>
           <div class="mdl-card__actions mdl-card--border" style='display:list-item'>
-          ${
-      portPiece.siteUrl
+          ${portPiece.siteUrl
         ? "<a href='https://" +
         portPiece.siteUrl +
         "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>visit site <i class='fas fa-external-link-square-alt'></i></a>"
         : ""
       }
-          ${
-      portPiece.playStoreUrl
+          ${portPiece.playStoreUrl
         ? "<a href='https://play.google.com/store/apps/details?id=" +
         portPiece.playStoreUrl +
         "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>google play <i class='fab fa-google-play'></i></a>"
         : ""
       }
-      ${
-      portPiece.appStoreUrl
+      ${portPiece.appStoreUrl
         ? "<a href='https://apps.apple.com/ca/app/" +
         portPiece.appStoreUrl +
         "' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' target='_blank'>app store <i class='fab fa-app-store-ios'></i></a>"
         : ""
       }
-            ${
-      portPiece.repoUrl
+            ${portPiece.repoUrl
         ? "<a href='https://github.com/Garrison88/" +
         portPiece.repoUrl +
         "' class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect' target='_blank'>view repo <i class='fab fa-github'></i></a>"
