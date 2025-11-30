@@ -123,6 +123,15 @@ button {
   background: none;
 }
 
+/* Thinner, centered divider */
+hr {
+  border: none;
+  height: 0.5px;
+  width: 200px;
+  background-color: var(--accent);
+  margin: 20px auto;
+}
+
 /* ==========================================
   NAVIGATION
   ==========================================  */
