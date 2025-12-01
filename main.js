@@ -20,32 +20,89 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     // ACCENT COLOR PICKER
     // ==========================================
-    const themePicker = document.getElementById('themePicker');
-    const pickerToggle = themePicker.querySelector('.theme-picker__toggle');
-    const colorButtons = themePicker.querySelectorAll('.color-btn');
+    // const themePicker = document.getElementById('themePicker');
+    // const pickerToggle = themePicker.querySelector('.theme-picker__toggle');
+    // const colorButtons = themePicker.querySelectorAll('.color-btn');
 
-    // Check for saved accent preference or default to coral
-    const savedAccent = localStorage.getItem('accent') || 'coral';
-    html.setAttribute('data-accent', savedAccent);
+    // // Check for saved accent preference or default to coral
+    // const savedAccent = localStorage.getItem('accent') || 'coral';
+    // html.setAttribute('data-accent', savedAccent);
 
-    pickerToggle.addEventListener('click', () => {
-        themePicker.classList.toggle('is-open');
-    });
+    // pickerToggle.addEventListener('click', () => {
+    //     themePicker.classList.toggle('is-open');
+    // });
 
-    // Close picker when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!themePicker.contains(e.target)) {
-            themePicker.classList.remove('is-open');
-        }
-    });
+    // // Close picker when clicking outside
+    // document.addEventListener('click', (e) => {
+    //     if (!themePicker.contains(e.target)) {
+    //         themePicker.classList.remove('is-open');
+    //     }
+    // });
 
-    colorButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const accent = btn.dataset.accent;
-            html.setAttribute('data-accent', accent);
-            localStorage.setItem('accent', accent);
+    // colorButtons.forEach(btn => {
+    //     btn.addEventListener('click', () => {
+    //         const accent = btn.dataset.accent;
+    //         html.setAttribute('data-accent', accent);
+    //         localStorage.setItem('accent', accent);
+    //     });
+    // });
+
+    // ==========================================
+    // LIGHTBOX
+    // ==========================================
+    const lightbox = document.getElementById('lightbox');
+
+    if (lightbox) {
+        const lightboxImg = lightbox.querySelector('.lightbox__image');
+        const lightboxClose = lightbox.querySelector('.lightbox__close');
+
+        // Open lightbox when clicking carousel images
+        document.querySelectorAll('.carousel__track img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('is-open');
+            });
         });
-    });
+
+        // Close lightbox
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('is-open');
+        });
+
+        // Close on background click
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('is-open');
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('is-open')) {
+                lightbox.classList.remove('is-open');
+            }
+        });
+    }
+
+    // ==========================================
+    // BACK TO TOP BUTTON
+    // ==========================================
+    const backToTop = document.getElementById('backToTop');
+
+    if (backToTop) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                backToTop.classList.add('is-visible');
+            } else {
+                backToTop.classList.remove('is-visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 
     // ==========================================
     // MOBILE MENU TOGGLE

@@ -70,7 +70,6 @@
         <div class="nav__mobile-social">
             <a href="https://github.com/Garrison88" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://linkedin.com/in/garrisonsiberry" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://twitter.com/GarrisonSiberry" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="mailto:garrison.siberry@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
     </div>
@@ -81,7 +80,7 @@
         <div class="hero__content">
             <span class="hero__label">L3 Software Engineer</span>
             <h1 class="hero__title">Garrison Siberry</h1>
-            <p class="hero__subtitle">7+ years of experience building mobile and web applications using Flutter & Dart
+            <p class="hero__subtitle">7+ years building mobile and web apps using Flutter & Dart
             </p>
             <a href="#resume" class="hero__cta">
                 Resume
@@ -107,28 +106,42 @@
                 <div class="about__text">
                     <p>
                         I am passionate about mobile development best practices, UI/UX design,
-                        and performance optimization. I work well both independently and in collaborative team
-                        environments.
+                        and performance optimization. I pride myself on writing clean, maintainable code and engaging in
+                        productive pair programming sessions.<br>I also excel at mentoring junior developers and
+                        translating technical specifications and requirements to non-technical people. I have adopted AI
+                        into some of my coding practices while retaining a thorough understanding of my code bases.<br>
+                        When I'm not coding, I enjoy cycling, yoga, and working on my home server.
                     </p>
                     <hr>
                     </hr>
                     <p>
-                        My obsession with programming began with a deep dive into Android. I designed, developed, and
-                        deployed a logistics app for a Toronto-based junk removal company. I later sold the app to them.
+                        My obsession with programming began with a deep dive into native Android development. I
+                        designed, developed, and deployed a logistics app for a Toronto-based junk removal company.
+                        <br>While at first the owner doubted our need to modernize, the app quickly proved valuable, and
+                        they later bought it from me.
                     </p>
                     <hr>
                     </hr>
                     <p>
-                        When I discovered Flutter in 2018, I used it to create Gloomhaven Companion—a mobile app for the
-                        popular board game that has since garnered over 50,000 downloads with a 4.9★ rating on Google
-                        Play. In 2019, I completed a contract to build a wildlife tracking app for a First Nations
-                        community in Northern B.C.
+                        In 2018, I used Flutter to create <a
+                            href="https://play.google.com/store/apps/details?id=tomkatcreative.gloomhavenenhancementcalc&hl=en_CA"
+                            class="text-link">Gloomhaven Companion</a>—a mobile app for the
+                        popular board game Gloomhaven. It has since garnered over 50,000 downloads with a 4.9★ rating
+                        on Google Play.<br>In 2019, I completed a contract to build the <b>Takla Fish Tracker</b>, and
+                        later
+                        the <a href="https://www.taklafn.ca/takla-wildlife-tracker/" class="text-link">Takla Wildlife
+                            Tracker</a> for a First Nations community in Northern British Columbia. It allows users to
+                        log wildlife
+                        encounters (including photos) and submit it to a Firebase backend.<br>In early 2020,
+                        I was hired on as a mobile developer at <a href="https://cmicglobal.com/"
+                            class="text-link">CMiC</a>.
                     </p>
                     <hr>
                     </hr>
                     <p>
                         I currently work as a Level 3 Software Engineer at CMiC building a Flutter app for a large
-                        construction ERP system.
+                        construction ERP platform. I collaborate closely with product managers, designers, and backend
+                        engineers.
                     </p>
 
                     <div class="about__skills">
@@ -206,6 +219,26 @@
                         </div>
                     </div>
                 </article>
+                <!-- Project 3: Junk Removal App -->
+                <article class="project-card">
+                    <div class="project-card__carousel">
+                        <div class="carousel__track">
+                            <img src="res/img/portfolio/roi_1.png" alt="Junk App screenshot 1">
+                            <img src="res/img/portfolio/roi_2.png" alt="Junk App screenshot 2">
+                            <img src="res/img/portfolio/roi_3.png" alt="Junk App screenshot 3">
+                            <img src="res/img/portfolio/roi_4.png" alt="Junk App screenshot 4">
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Junk Removal App</h3>
+                        <p class="project-card__tech">Java • Firebase • Material Design</p>
+                        <p class="project-card__description">
+                            Replaces paper tickets for a Toronto-based junk removal company. Allows drivers to receive
+                            job details, provide reliable and transparent job estimates, and
+                            sync data with Firebase.
+                        </p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -220,7 +253,7 @@
 
             <div class="resume__wrapper">
                 <div class="resume__actions">
-                    <h3 class="resume__title">Resume</h3>
+                    <!-- <h3 class="resume__title">Resume</h3> -->
                     <div class="resume__buttons">
                         <a href="https://docs.google.com/document/d/1VSVN7K-wA05Ow3vkh2WGi3QdOTuM3NnIpYOdR1B8Ins/export?format=pdf"
                             target="_blank" class="resume-btn resume-btn--download">
@@ -259,7 +292,7 @@
     </footer>
 
     <!-- Theme Picker (Color Accent) -->
-    <div class="theme-picker" id="themePicker">
+    <!-- <div class="theme-picker" id="themePicker">
         <button class="theme-picker__toggle" aria-label="Change accent color">
             <i class="fas fa-palette"></i>
         </button>
@@ -272,8 +305,15 @@
                 <button class="color-btn color-btn--amber" data-accent="amber" aria-label="Amber theme"></button>
             </div>
         </div>
+    </div> -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" aria-label="Close">&times;</button>
+        <img class="lightbox__image" src="" alt="">
+        <script src="main.js"></script>
     </div>
-    <script src="main.js" defer></script>
 </body>
 
 </html>

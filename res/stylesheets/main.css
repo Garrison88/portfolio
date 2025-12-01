@@ -266,6 +266,28 @@ hr {
   font-size: 1.25rem;
 }
 
+.text-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.text-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.text-link:hover::after {
+  width: 100%;
+}
+
 /* ==========================================
   HERO SECTION
   ==========================================  */
@@ -607,6 +629,95 @@ hr {
   color: var(--text-primary);
 }
 
+/* Carousel */
+.project-card__carousel {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel__track {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+}
+
+.carousel__track img {
+  height: 300px;
+  width: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.carousel__track img:hover {
+  transform: scale(1.03);
+}
+
+/* Hide scrollbar but keep functionality */
+.project-card__carousel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.project-card__carousel::-webkit-scrollbar-track {
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+}
+
+.project-card__carousel::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox__image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.lightbox.is-open .lightbox__image {
+  transform: scale(1);
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.lightbox__close:hover {
+  transform: scale(1.2);
+}
+
 /* ==========================================
   RESUME SECTION
   ==========================================  */
@@ -671,7 +782,7 @@ hr {
 
 .resume__embed {
   width: 100%;
-  height: 800px;
+  height: 1200px;
   border: none;
   display: block;
   background: var(--white);
@@ -729,7 +840,7 @@ hr {
 /* ==========================================
   THEME PICKER
   ==========================================  */
-.theme-picker {
+/* .theme-picker {
   position: fixed;
   bottom: 24px;
   right: 24px;
@@ -819,11 +930,51 @@ hr {
 [data-accent="indigo"] .color-btn--indigo,
 [data-accent="amber"] .color-btn--amber {
   border-color: var(--text-primary);
+} */
+
+/*==========================================
+  BACK TO TOP BUTTON
+  ==========================================  */
+.back-to-top {
+  position: fixed;
+  bottom: 24px;
+  left: calc(50% - 550px - 72px);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--white);
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--accent-dark);
+  transform: translateY(-3px);
 }
 
 /* ==========================================
   RESPONSIVE
   ==========================================  */
+
+@media (max-width: 1250px) {
+  .back-to-top {
+    left: 24px;
+  }
+}
+
 @media (max-width: 768px) {
   :root {
     --section-gap: 64px;
